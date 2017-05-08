@@ -10,9 +10,9 @@ toast.error('hello world', 3000)
 toast.success()
 toast.default()
 
-参数说明：
-第一个参数为字符
-第二个为显示时间，默认为3s
+// 参数说明：
+// 第一个参数为字符
+// 第二个为显示时间，默认为3s
 ```
 
 非es6环境引入
@@ -28,6 +28,7 @@ if (typeof module !== 'undefined' && typeof exports === 'object' && define.cmd) 
 }  
 ```
 
-参考：
+参考：  
+
 [ES6-模块与-CommonJS-模块的差异](http://es6.ruanyifeng.com/#docs/module-loader#ES6-模块与-CommonJS-模块的差异)   
 [es6简介](http://es6.ruanyifeng.com/#docs/intro)
