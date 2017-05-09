@@ -15,14 +15,14 @@ confirm('hehe!~', '', ()=> console.log(111))
 + 需要将代码编译成es5
 + 需要引入jquery，并reset基础样式
 
-alert参数 
+#### alert参数 
 
 alert|参数名|描述
 ---|---|---
 ||msg|（必填）提示字符
 ||confirmCallback|（可选）点击确定的回调
 
-confirm参数  
+#### confirm参数  
 
 confirm|参数名|描述
 ---|---|---
@@ -32,7 +32,7 @@ confirm|参数名|描述
 ||cancelText|（可选）取消文案
 ||cancel|（可选）取消回调
 
-完整的参数说明表
+#### 可定制化完整的参数说明表
 
 参数名|默认值|描述
 ---|---|---
