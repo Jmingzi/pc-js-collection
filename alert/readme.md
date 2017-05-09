@@ -1,4 +1,4 @@
-## alert
+## jquery-alert
 > es6语法
 
 使用
@@ -32,5 +32,31 @@ confirm|参数名|描述
 ||cancelText|（可选）取消文案
 ||cancel|（可选）取消回调
 
+完整的参数说明表
 
+参数名|默认值|描述
+---|---|---
+hasTop|true|是否有头部
+title|提示|提示文案
+titleAlign|left|排列方式
+hasClose|true|是否有关闭按钮
+closeCallback|closeCallback() {}|关闭回调
+msg|hello world|展示信息
+hasBottom|true|是否有底部
+confirmBtn||
+||hasBtn|true|是否有该按钮
+||bgColor|'#29BD8B'|按钮背景色
+||bdColor|'#29BD8B'|按钮边框色
+||color|#fff|按钮字体色
+||text|确定|文案
+||callback|callback() {}|回调
+cancelBtn||
+||hasBtn|true|是否有该按钮
+||bgColor|'#fff'|按钮背景色
+||bdColor|'#ccc'|按钮边框色
+||color|#333|按钮字体色
+||text|取消|文案
+||callback|callback() {}|回调
+otherBtn|[]|除了确定取消之外额外的按钮，按钮穿参同上
+btnSequence|['cancelBtn', 'confirmBtn', 'otherBtn']|按钮展示顺序
 
