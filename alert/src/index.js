@@ -1,18 +1,40 @@
+/**
+ * jquery-modal.js
+ * by jmingzi
+ * modified at 2017/5/30
+ */
+
+// 引入jquery
 import $ from '../../node_modules/jquery'
-import './modal.scss'
+// 引入style
+import './index.scss'
 
 const defaultSetting = {
+    // 是否是modal
     isModal: false,
-
+    
+    // 是否有头部
     hasTop: true,
+    
+    // 头部标题
     title: '提示',
+    
+    // 头部标题排列方式 left/center/right
     titleAlign: 'left',
+    
+    // 头部关闭按钮
     hasClose: true,
+    
+    // 头部关闭按钮回调
     closeCallback() {},
-
+    
+    // alert,confirm时的提示信息
     msg: 'hello world',
-
+    
+    // 是否有底部操作栏
     hasBottom: true,
+    
+    // 确定按钮
     confirmBtn: {
         hasBtn: true,
         bgColor: '#29BD8B',
@@ -21,6 +43,8 @@ const defaultSetting = {
         text: '确定',
         callback() {}
     },
+    
+    // 取消关闭按钮
     cancelBtn: {
         hasBtn: true,
         bgColor: '#fff',
@@ -29,18 +53,22 @@ const defaultSetting = {
         text: '取消',
         callback() {}
     },
+    
+    // 其它自定义按钮
     otherBtn: [],
+    
+    // 按钮顺序
     btnSequence: ['cancelBtn', 'confirmBtn', 'otherBtn']
 }
 
 const defaultModalSetting = {
+    // modal 选择器
     selector: '',
+    
     width: 500,
     height: 300,
     
-    customTop: false,
-    customFoot: false,
-    
+    // modal 回调
     beforeShow() {
         console.log('before show')
     },
