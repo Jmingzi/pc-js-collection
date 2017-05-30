@@ -14,10 +14,31 @@
     </style>
 </head>
 <body>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../dist/notEs6.js"></script>
-    <script> 
-        modal.alert(111)
+
+    <div id="test">
+        <p>test</p>
+    </div>
+
+    <script src="../dist/modal.js"></script>
+    <script>
+        // modal.alert('heheh')
+
+        // modal.confirm('warning', 'ok')
+
+        var test = modal.modal({
+            selector: '#test',
+
+            width: 500,
+            height: 300,
+            beforeShow() {
+                console.log('before show')
+            },
+            afterShow() {
+                console.log('after show')
+            }
+        })
+
+        test.show()
     </script>
 </body>
 </html>
