@@ -4,63 +4,54 @@
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 11;
-}
-.m-mask .m-wrap {
-  width: 400px;
-  height: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -200px;
-  margin-top: -100px;
-  background-color: #fff;
-  border-radius: 4px;
-  font-size: 14px;
-  overflow: hidden;
-}
-.m-mask .m-wrap .m-head {
-  position: relative;
-  line-height: 40px;
-  background-color: #eee;
-}
-.m-mask .m-wrap .m-head .m-close {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 100;
-  color: #666;
-  line-height: 35px;
-}
-.m-mask .m-wrap .m-head .m-title {
-  padding: 0 20px;
-}
-.m-mask .m-wrap .m-body {
-  display: table-cell;
-  width: 400px;
-  height: 100px;
-  vertical-align: middle;
-  overflow: auto;
-}
-.m-mask .m-wrap .m-body .m-msg {
-  margin: 0 20px;
-  text-align: center;
-}
-.m-mask .m-wrap .m-foot {
-  line-height: 60px;
-  text-align: center;
-}
-.m-mask .m-wrap .m-foot .m-btn {
-  display: inline-block;
-  padding: 6px 15px;
-  border-radius: 4px;
-  color: #ffffff;
-  line-height: normal;
-  border: 1px transparent solid;
-  margin: 0 5px;
-}
+  z-index: 11; }
+  .m-mask .m-wrap {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    overflow: hidden; }
+    .m-mask .m-wrap .m-head {
+      position: relative;
+      line-height: 40px;
+      background-color: #eee; }
+      .m-mask .m-wrap .m-head .m-close {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 100;
+        color: #666;
+        line-height: 35px; }
+      .m-mask .m-wrap .m-head .m-title {
+        padding: 0 20px; }
+    .m-mask .m-wrap .m-body {
+      display: table-cell;
+      width: 400px;
+      height: 100px;
+      vertical-align: middle;
+      overflow: auto; }
+      .m-mask .m-wrap .m-body .m-msg {
+        margin: 0 20px;
+        text-align: center; }
+    .m-mask .m-wrap .m-foot {
+      line-height: 60px;
+      text-align: center; }
+      .m-mask .m-wrap .m-foot .m-btn {
+        display: inline-block;
+        padding: 6px 15px;
+        border-radius: 4px;
+        color: #ffffff;
+        line-height: normal;
+        border: 1px transparent solid;
+        margin: 0 5px; }
