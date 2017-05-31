@@ -4,11 +4,14 @@ es6环境使用
 ```js
 import { alert, confirm, modal, custom } from 'modalAlert'
 
+// alert
 alert('hello world')
 alert('hello world', ()=> console.log('confirm回调'))
 
+// confirm
 confirm('hehe!~', '', ()=> console.log(111))
 
+// modal
 var modalInstance = modal.modal({
     selector: '#test',
 
@@ -22,9 +25,9 @@ var modalInstance = modal.modal({
         console.log('after show')
     }
 })
-
 modalInstance.show()
 
+// custom
 custom({
     ...options  // 所有定制化的选项
 })

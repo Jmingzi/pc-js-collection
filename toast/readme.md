@@ -15,7 +15,7 @@ toast.default()
 ```
 
 #### 非es6环境使用
-```
+```html
 // css
 <link rel="stylesheet" href="../dist/toast.css">
 // toast.js
