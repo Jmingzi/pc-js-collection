@@ -38,6 +38,9 @@ custom({
 <script src="jquery.js"></script>
 // modal.js
 <script src="../dist/modal.js"></script>
+
+// modal.alert
+// modal.confirm
 ```
 
 #### 1.alert参数 

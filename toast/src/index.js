@@ -1,3 +1,5 @@
+import './index.scss'
+
 class Toast {
     static setting = {
         type: 'default',
@@ -21,7 +23,7 @@ class Toast {
         let div = document.createElement('div')
         div.setAttribute('class', 'm-toast')
 
-        let msg = document.createElement('p')
+        let msg = document.createElement('span')
         msg.innerText = this.setting.msg
         div.appendChild(msg)
         topWrap.appendChild(div)
@@ -46,7 +48,7 @@ class Toast {
     }
 }
 
-export default {
+const exportToast = {
     error(str, duration) {
         return new Toast({
             type: 'error',
@@ -75,4 +77,10 @@ export default {
             duration: duration || 3000
         })
     }
+}
+
+if (typeof module === "object" && typeof module.exports === "object") {
+    module.exports = exportToast
+} else {
+    window.toast = exportToast
 }

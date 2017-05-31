@@ -9,7 +9,7 @@ const moduleEnv = process.env.module
 
 module.exports = {
     entry: {
-        modal: './' + moduleEnv + '/src/index.js'
+        [moduleEnv]: './' + moduleEnv + '/src/index.js'
     },
     output: {
         path: resolve(__dirname, moduleEnv + '/dist'),

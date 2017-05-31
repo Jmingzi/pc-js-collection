@@ -1,4 +1,4 @@
-## toast.js
+## index.js
 >es6风格语法
 
 使用：

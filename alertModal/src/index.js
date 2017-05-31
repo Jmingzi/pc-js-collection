@@ -28,7 +28,7 @@ const defaultSetting = {
     // 头部关闭按钮回调
     closeCallback() {},
     
-    // alert,confirm时的提示信息
+    // alertModal,confirm时的提示信息
     msg: 'hello world',
     
     // 是否有底部操作栏
@@ -78,7 +78,7 @@ const defaultModalSetting = {
 }
 
 /**
- * alert,confirm,modal,custom
+ * alertModal,confirm,modal,custom
  * 基础实现
  */
 class Base {

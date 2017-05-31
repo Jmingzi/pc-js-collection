@@ -20,13 +20,13 @@
     }
 
     &.error .m-toast {
-        background-color: #FFCCCC;
+        background-color: lighten(#fa565a, 30%);
         color: #fa565a;
         border-color: #fa565a;
     }
 
     &.info .m-toast {
-        background-color: #CCFFFF;
+        background-color: lighten(#66CCFF, 30%);
         color: #66CCFF;
         border-color: #66CCFF;
     }
@@ -45,8 +45,7 @@
 }
 .m-toast {
     display: inline-block;
-    line-height: 40px;
-    padding: 0 15px;
+    padding: 10px 15px;
     font-size: 14px;
     border-radius: 4px;
     border: 1px transparent solid;

@@ -7,42 +7,33 @@
   text-align: center;
   opacity: 0;
   transition: all .5s ease;
-  z-index: 11;
-}
-.div-wrap.enter-active {
-  top: 30px;
-  opacity: 1;
-}
-.div-wrap.leave-active {
-  top: -100px;
-  opacity: 0;
-}
-.div-wrap.error .m-toast {
-  background-color: #FFCCCC;
-  color: #fa565a;
-  border-color: #fa565a;
-}
-.div-wrap.info .m-toast {
-  background-color: #CCFFFF;
-  color: #66CCFF;
-  border-color: #66CCFF;
-}
-.div-wrap.default .m-toast {
-  background-color: #333;
-  color: #eee;
-  border-color: #111;
-}
-.div-wrap.success .m-toast {
-  background-color: #99FFCC;
-  color: #48C2B6;
-  border-color: #48C2B6;
-}
+  z-index: 11; }
+  .div-wrap.enter-active {
+    top: 30px;
+    opacity: 1; }
+  .div-wrap.leave-active {
+    top: -100px;
+    opacity: 0; }
+  .div-wrap.error .m-toast {
+    background-color: #feebeb;
+    color: #fa565a;
+    border-color: #fa565a; }
+  .div-wrap.info .m-toast {
+    background-color: white;
+    color: #66CCFF;
+    border-color: #66CCFF; }
+  .div-wrap.default .m-toast {
+    background-color: #333;
+    color: #eee;
+    border-color: #111; }
+  .div-wrap.success .m-toast {
+    background-color: #99FFCC;
+    color: #48C2B6;
+    border-color: #48C2B6; }
 
 .m-toast {
   display: inline-block;
-  line-height: 40px;
-  padding: 0 15px;
+  padding: 10px 15px;
   font-size: 14px;
   border-radius: 4px;
-  border: 1px transparent solid;
-}
+  border: 1px transparent solid; }
