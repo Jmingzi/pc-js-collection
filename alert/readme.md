@@ -1,28 +1,48 @@
-## jquery-alert
+## jquery-modal
 > es6语法
 
 使用
 ```js
-import { alert, confirm } from 'modalAlert'
+import { alert, confirm, modal, custom } from 'modalAlert'
 
 alert('hello world')
 alert('hello world', ()=> console.log('confirm回调'))
 
 confirm('hehe!~', '', ()=> console.log(111))
+
+var modalInstance = modal.modal({
+    selector: '#test',
+
+    width: 500,
+    height: 300,
+    
+    beforeShow() {
+        console.log('before show')
+    },
+    afterShow() {
+        console.log('after show')
+    }
+})
+
+modalInstance.show()
+
+custom({
+    ...options  // 所有定制化的选项
+})
 ```
 
 非es6环境使用
 + 需要将代码编译成es5
 + 需要引入jquery，并reset基础样式
 
-#### alert参数 
+#### 1.alert参数 
 
 alert|参数名|描述
 ---|---|---
 ||msg|（必填）提示字符
 ||confirmCallback|（可选）点击确定的回调
 
-#### confirm参数  
+#### 2.confirm参数  
 
 confirm|参数名|描述
 ---|---|---
@@ -32,10 +52,26 @@ confirm|参数名|描述
 ||cancelText|（可选）取消文案
 ||cancel|（可选）取消回调
 
-#### 可定制化完整的参数说明表
+#### 3.modal参数  
+modal接受2个参数：
++ modalParams   定制化modal的参数
++ alertParams   定制化alert，confirm的参数
+
+modalParams|参数名|描述
+---|---|---
+||selector|（必填）选择器，例如：'#test','.test','test'，默认是id
+||width|（可选）默认500
+||height|（可选）默认300
+||beforeShow|（可选）
+||afterShow|（可选）
+
+alertParams参数如下
+
+#### 4.custom可定制化完整的参数说明表
 
 参数名|默认值|描述
 ---|---|---
+isModal|false|是否是modal
 hasTop|true|是否有头部
 title|提示|提示文案
 titleAlign|left|排列方式
