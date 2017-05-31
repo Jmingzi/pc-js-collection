@@ -1,7 +1,6 @@
 ## jquery-modal
-> es6语法
 
-使用
+es6环境使用
 ```js
 import { alert, confirm, modal, custom } from 'modalAlert'
 
@@ -32,8 +31,14 @@ custom({
 ```
 
 非es6环境使用
-+ 需要将代码编译成es5
-+ 需要引入jquery，并reset基础样式
+```html
+// css
+<link rel="stylesheet" href="../dist/modal.css">
+// jquery.js
+<script src="jquery.js"></script>
+// modal.js
+<script src="../dist/modal.js"></script>
+```
 
 #### 1.alert参数 
 
