@@ -33,11 +33,11 @@ custom({
 非es6环境使用
 ```html
 // css
-<link rel="stylesheet" href="../dist/modal.css">
+<link rel="stylesheet" href="../dist/alertModal.css">
 // jquery.js
 <script src="jquery.js"></script>
 // modal.js
-<script src="../dist/modal.js"></script>
+<script src="../dist/alertModal.js"></script>
 
 // modal.alert
 // modal.confirm

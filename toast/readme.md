@@ -1,7 +1,6 @@
-## index.js
->es6风格语法
+## toast.js
 
-使用：
+#### 使用
 ```js
 import toast from 'toast'
 
@@ -15,20 +14,12 @@ toast.default()
 // 第二个为显示时间，默认为3s
 ```
 
-非es6环境引入
-+ 你需要将es6转换成es5
-+ 你需要一个CommonJs环境 ／ 或者直接修改代码，将toast置为window下的方法
-
-示例：
-```js
-if (typeof module !== 'undefined' && typeof exports === 'object' && define.cmd) {  
-    module.exports = Toast
-} else {  
-    window.toast = Toast
-}  
+#### 非es6环境使用
 ```
+// css
+<link rel="stylesheet" href="../dist/toast.css">
+// toast.js
+<script src="../dist/toast.js"></script>
 
-参考：  
-
-[ES6-模块与-CommonJS-模块的差异](http://es6.ruanyifeng.com/#docs/module-loader#ES6-模块与-CommonJS-模块的差异)   
-[es6简介](http://es6.ruanyifeng.com/#docs/intro)
+// toast.error('demo')
+```

@@ -1,5 +1,5 @@
 # pc-js-collection
-web端js组件
+#### web端js组件
 
 + [toast.js](./toast)　 
 + [jquery-modal.js](./alertModal)
@@ -23,3 +23,19 @@ export module=toast&& webpack
 ./dist
 ./demo
 ```
+
+#### 关于模块化插件写法
+
+示例
+```js
+if (typeof module === "object" && typeof module.exports === "object") {
+    module.exports = exportToast
+} else {
+    window.toast = exportToast
+}
+```
+
+参考 
+
+[ES6-模块与-CommonJS-模块的差异](http://es6.ruanyifeng.com/#docs/module-loader#ES6-模块与-CommonJS-模块的差异)   
+[es6简介](http://es6.ruanyifeng.com/#docs/intro)
