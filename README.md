@@ -3,6 +3,7 @@
 
 + [toast.js](./toast)　 
 + [jquery-modal.js](./alertModal)
++ [loading.js](./loading)
 
 
 #### 关于demo打包
