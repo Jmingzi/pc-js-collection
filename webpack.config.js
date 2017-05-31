@@ -27,6 +27,10 @@ module.exports = {
                 use: extractSass.extract({
                     use: [ { loader: "css-loader" }, { loader: 'sass-loader' } ]
                 })
+            },
+            {
+                test: /\.(png|gif)$/,
+                use: "url-loader?limit=8192&name=[name].[ext]"
             }
         ]
     },
