@@ -2,7 +2,7 @@
 #### web端js组件
 
 + [toast.js](./toast)　 
-+ [jquery-modal.js](./alertModal)
++ [alertModal.js](./alertModal)
 + [loading.js](./loading)
 
 

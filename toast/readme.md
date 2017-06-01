@@ -15,5 +15,4 @@ toast.default()
 ```
 
 非es6环境使用
-+ 需要全局引入jquery
 + 需要将 src下的 源码转化为es5，并加入非CommonJs规范语句，全局引入即可
