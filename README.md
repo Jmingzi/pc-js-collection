@@ -1,4 +1,4 @@
-# pc-js-collection
+# web-js-collection
 #### web端js组件
 
 + [toast.js](./toast)　 
@@ -44,3 +44,9 @@ if (typeof module === "object" && typeof module.exports === "object") {
 
 [ES6-模块与-CommonJS-模块的差异](http://es6.ruanyifeng.com/#docs/module-loader#ES6-模块与-CommonJS-模块的差异)   
 [es6简介](http://es6.ruanyifeng.com/#docs/intro)
+
+#### 第三方常用库
+
+[storage]
+
++ [web-storage-cache](https://github.com/WQTeam/web-storage-cache)
