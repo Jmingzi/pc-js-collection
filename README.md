@@ -20,9 +20,13 @@ export module=toast&& webpack
 
 ```
 ./src
-     ./index.js
-./dist
+     ./[module].js
+     ./[module].scss
+     ./demo.js      // 打包入口文件
 ./demo
+    ./index.html    // demo html
+    ./demo.vendor.js    // demo 打包后的js
+    ./[module].css      // 模块css
 ```
 
 #### 关于模块化插件写法

@@ -1,4 +1,4 @@
-import './index.scss'
+import './toast.scss'
 
 class Toast {
     static setting = {
@@ -48,7 +48,7 @@ class Toast {
     }
 }
 
-const exportToast = {
+export default {
     error(str, duration) {
         return new Toast({
             type: 'error',
@@ -79,8 +79,3 @@ const exportToast = {
     }
 }
 
-if (typeof module === "object" && typeof module.exports === "object") {
-    module.exports = exportToast
-} else {
-    window.toast = exportToast
-}

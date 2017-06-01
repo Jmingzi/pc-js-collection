@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>alert</title>
-    <link rel="stylesheet" href="../dist/alertModal.css">
+    <link rel="stylesheet" href="./alertModal.css">
     <style>
         * {
             margin: 0;
@@ -19,25 +19,6 @@
         <p>test</p>
     </div>
 
-    <script src="../dist/alertModal.js"></script>
-    <script>
-        // modal.alertModal('heheh')
-        // modal.confirm('warning', 'ok')
-
-        var test = modal.modal({
-            selector: '#test',
-
-            width: 500,
-            height: 300,
-            beforeShow() {
-                console.log('before show')
-            },
-            afterShow() {
-                console.log('after show')
-            }
-        })
-
-        test.show()
-    </script>
+    <script src="./demo.vendor.js"></script>
 </body>
 </html>

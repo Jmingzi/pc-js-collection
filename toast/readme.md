@@ -2,7 +2,7 @@
 
 #### 使用
 ```js
-import toast from 'toast'
+import toast from './toast.js'
 
 toast.info('hello world')
 toast.error('hello world', 3000)
@@ -14,12 +14,6 @@ toast.default()
 // 第二个为显示时间，默认为3s
 ```
 
-#### 非es6环境使用
-```html
-// css
-<link rel="stylesheet" href="../dist/toast.css">
-// toast.js
-<script src="../dist/toast.js"></script>
-
-// toast.error('demo')
-```
+非es6环境使用
++ 需要全局引入jquery
++ 需要将 src下的 源码转化为es5，并加入非CommonJs规范语句，全局引入即可

@@ -1,15 +1,16 @@
-## jquery-modal
+## alertModal.js
+> 依赖jquery
 
 es6环境使用
 ```js
-import { alert, confirm, modal, custom } from 'modalAlert'
+import modal from 'alertModal'
 
 // alert
-alert('hello world')
-alert('hello world', ()=> console.log('confirm回调'))
+modal.alert('hello world')
+modal.alert('hello world', ()=> console.log('confirm回调'))
 
 // confirm
-confirm('hehe!~', '', ()=> console.log(111))
+modal.confirm('hehe!~', '', ()=> console.log(111))
 
 // modal
 var modalInstance = modal.modal({
@@ -28,23 +29,14 @@ var modalInstance = modal.modal({
 modalInstance.show()
 
 // custom
-custom({
+modal.custom({
     ...options  // 所有定制化的选项
 })
 ```
 
 非es6环境使用
-```html
-// css
-<link rel="stylesheet" href="../dist/alertModal.css">
-// jquery.js
-<script src="jquery.js"></script>
-// modal.js
-<script src="../dist/alertModal.js"></script>
-
-// modal.alert
-// modal.confirm
-```
++ 需要全局引入jquery
++ 需要将 src下的 源码转化为es5，并加入非CommonJs规范语句，全局引入即可
 
 #### 1.alert参数 
 

@@ -9,13 +9,15 @@ const moduleEnv = process.env.module
 
 module.exports = {
     entry: {
-        [moduleEnv]: './' + moduleEnv + '/src/index.js'
+        [moduleEnv]: './' + moduleEnv + '/src/demo.js'
     },
     output: {
-        path: resolve(__dirname, moduleEnv + '/dist'),
-        filename: '[name].js'
+        path: resolve(__dirname, moduleEnv + '/demo'),
+        filename: 'demo.vendor.js'
     },
     module: {
+        noParse: /jquery/,
+        
         rules: [
             {
                 test: /\.js$/,

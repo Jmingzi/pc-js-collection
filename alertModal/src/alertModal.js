@@ -5,9 +5,9 @@
  */
 
 // 引入jquery
-import $ from '../../node_modules/jquery'
+import $ from 'jquery'
 // 引入style
-import './index.scss'
+import './alertModal.scss'
 
 const defaultSetting = {
     // 是否是modal
@@ -257,7 +257,7 @@ class Modal extends Base {
     }
 }
 
-const customModal = {
+export default {
     alert(msg, confirmCallback) {
         let data = {
             msg: msg,
@@ -307,9 +307,5 @@ const customModal = {
     }
 }
 
-if (typeof module === "object" && typeof module.exports === "object") {
-    module.exports = customModal
-} else {
-    window.modal = customModal
-}
+
 
