@@ -1,32 +1,36 @@
 # web-js-collection
 #### web端js组件
 
-+ [toast.js](./toast)　 
-+ [alertModal.js](./alertModal)
-+ [loading.js](./loading)
++ [Toast](./toast)  消息提示 
++ [AlertModal](./alertModal)  集成alert、confirm、modal，一切皆可定义
++ [Loading](./loading)  加载loading
++ [LoadingShell](./loadingShell)    更友好的loading
 
 
 #### 关于demo打包
 
 例如
 
-```js
+```
 export module=alertModal&& webpack
-
 export module=toast&& webpack
+export module=loading&& webpack
+export module=loadingShell&& webpack
 ```
 
 需要设置node环境变量module=`demo模块`，demo模块的结构：
 
 ```
-./src
-     ./[module].js
-     ./[module].scss
-     ./demo.js      // 打包入口文件
-./demo
-    ./index.html    // demo html
-    ./demo.vendor.js    // demo 打包后的js
-    ./[module].css      // 模块css
+[module]
+├── demo
+│   ├── demo.vendor.js   打包后的demo.js
+│   ├── index.html       demo.html
+│   └── [module].css     模块css
+├── readme.md
+└── src
+    ├── demo.js          demo 入口文件  必须
+    ├── [module].js      模块.js       必须 
+    └── [module].scss    模块.scss     可选
 ```
 
 #### 关于模块化插件写法
