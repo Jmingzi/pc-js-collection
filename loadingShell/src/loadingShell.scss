@@ -30,7 +30,12 @@
         animation: slow-width .5s forwards;
         -webkit-animation: slow-width .5s forwards;
     }
-    .duration-1 {
+    .duration-half {
+        opacity: 0;
+        animation-duration: .75s;
+        -webkit-animation-duration: .75s;
+    }
+    .duration-double {
         opacity: 0;
         animation-duration: 1s;
         -webkit-animation-duration: 1s;

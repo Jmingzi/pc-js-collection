@@ -2,7 +2,7 @@ import './loadingShell.scss'
 
 const htmlTpl = `<div class="loading-cell">
     <p class="list list-80 bg-gray animated"></p>
-    <p class="list list-40 bg-gray animated duration-1"></p>
+    <p class="list list-40 bg-gray animated duration-double"></p>
 </div>`
 
 class LoadingShell {
