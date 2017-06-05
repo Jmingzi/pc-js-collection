@@ -30,7 +30,7 @@ htmlTpl|{string} **单个**cell的html模版
 
 如果是自定义cell模版即htmlTpl，插件也提供特定的类名以供使用，默认模版如下
 
-```hmtl
+```html
 <div class="loading-cell">
     <p class="list list-80 bg-gray animated"></p>
     <p class="list list-40 bg-gray animated duration-1"></p>
