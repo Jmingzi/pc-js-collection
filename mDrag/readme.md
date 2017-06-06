@@ -66,6 +66,7 @@ new Mdrag({
 ```
 
 属性名|必填值|说明
+----|----|----
 class|mDrag-item [componentName]|mDrag-item必须，另外如果是可嵌套，itemName必须为block；其它自定义
 data-component|block/自定义|唯一标识item的属性
 
