@@ -8,7 +8,7 @@
 + [Mdrag](./mDrag)    兼容ie8的可嵌套拖拽的定制化组件
 
 
-#### 关于demo打包
+#### 1.关于demo打包
 
 例如
 
@@ -34,7 +34,7 @@ export module=loadingShell&& webpack
     └── [module].scss    模块.scss     可选
 ```
 
-#### 关于模块化插件写法
+#### 2.关于模块化插件写法
 
 示例
 ```js
@@ -50,7 +50,7 @@ if (typeof module === "object" && typeof module.exports === "object") {
 [ES6-模块与-CommonJS-模块的差异](http://es6.ruanyifeng.com/#docs/module-loader#ES6-模块与-CommonJS-模块的差异)   
 [es6简介](http://es6.ruanyifeng.com/#docs/intro)
 
-#### 第三方常用库
+#### 3.第三方常用库
 
 [storage]
 
