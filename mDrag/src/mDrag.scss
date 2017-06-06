@@ -1,0 +1,84 @@
+.mDrag-item {
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    border: 1px transparent solid;
+    background-color: #f2f2f2;
+    cursor: move;
+    user-select: none;
+    -webkit-user-select: none;
+
+    &.draging {
+        position: absolute!important;
+        border-color: #ccc;
+
+        .del-drag {
+            display: none!important;
+        }
+    }
+
+    .block-container {
+        padding: 15px 0;
+    }
+
+    .del-drag {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        background-color: #FB5456;
+        cursor: pointer;
+        display: none;
+        color: #fff;
+        line-height: 15px;
+        text-align: center;
+    }
+}
+
+.mDrag-from {
+    width: 500px;
+    height: 300px;
+    border: 1px #333 solid;
+}
+
+.mDrag-to {
+    width: 500px;
+    height: 300px;
+    border: 1px #333 solid;
+
+    .dragged {
+        width: auto;
+        height: auto;
+        min-height: 50px;
+        background-color: #fff;
+        border-top-color: #ccc;
+        border-bottom-color: #ccc;
+
+        .block-container {
+            .mDrag-item {
+                margin: 0;
+                border-top-color: transparent;
+            }
+        }
+    }
+
+    .hover {
+        position: relative;
+        border: 1px #FB5456 dashed;
+    }
+
+    .draging {
+        width: 300px;
+    }
+
+    .target-line {
+        border: 1px red solid;
+        display: none;
+        margin: 10px 0;
+    }
+
+    .curr-edit {
+        border: 1px #FB5456 solid!important;
+    }
+}
