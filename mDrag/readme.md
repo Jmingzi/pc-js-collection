@@ -43,6 +43,34 @@ new Mdrag({
 })
 ```
 
+### 必要的html结构说明
+1、容器
+```html
+<div class="mDrag-from"></div>
+<div class="mDrag-to"></div>
+```
+
+2、拖拽item
+> 非嵌套item
+```html
+<div class="mDrag-item number" data-component="number">
+    <div class="del-drag">&times;</div>
+</div>
+```
+> 可嵌套item
+```html
+<div class="mDrag-item block" data-component="block">
+    <div class="block-container">block</div>
+    <div class="del-drag">&times;</div>
+</div>
+```
+
+属性名|必填值|说明
+class|mDrag-item [componentName]|mDrag-item必须，另外如果是可嵌套，itemName必须为block；其它自定义
+data-component|block/自定义|唯一标识item的属性
+
+另外删除dom也是必须的
+
 ### 拖拽思路
 + 主要是用的`mousedown` `mousemove` `mouseup`模拟的拖拽
 + 可拖拽的目标可以是源目标，也可以是目标本身
@@ -52,3 +80,5 @@ new Mdrag({
 ### 计算拖拽位置的实现思路
 + 每拖动一个目标，计算出该目标与目标容器的`offsetTop + offsetHeight/2`，然后用这个值与当前鼠标的`pageY`值做比较，也就是比较该目标的Y轴中心线与当前鼠标的pageY值，它们之间的差值为diffTop
 + 要计算出此时离哪个目标最近，才可能将被推拽的放到该目标的前面或后面，所以遍历目标容器，将所有的diffTop放进一个数组，求绝对值最小值，得到数组索引，并判断正负，大于0即after，小于0即before，而索引正是该目标的位置
+
+
