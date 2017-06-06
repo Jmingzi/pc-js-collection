@@ -5,6 +5,7 @@
 + [AlertModal](./alertModal)  集成alert、confirm、modal，一切皆可定义
 + [Loading](./loading)  加载loading
 + [LoadingShell](./loadingShell)    更友好的loading
++ [Mdrag](./mDrag)    兼容ie8的可嵌套拖拽的定制化组件
 
 
 #### 关于demo打包
